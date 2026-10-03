@@ -1,0 +1,3 @@
+import SectionHeading from './SectionHeading'
+import { portfolio } from '../data/portfolio'
+export default function Skills() { return <section className="section skills-section" id="skills"><div className="container"><SectionHeading eyebrow="02 / Toolkit" title="The tools I use to turn ideas into working products." /><div className="skill-grid">{Object.entries(portfolio.skills).map(([group, skills]) => <div className="skill-group" key={group}><h3>{group}</h3><div>{skills.map(skill => <span key={skill}>{skill}</span>)}</div></div>)}</div></div></section> }

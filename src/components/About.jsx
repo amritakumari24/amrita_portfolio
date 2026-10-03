@@ -1,0 +1,3 @@
+import SectionHeading from './SectionHeading'
+import { portfolio } from '../data/portfolio'
+export default function About() { return <section className="section about" id="about"><div className="container split"><SectionHeading eyebrow="01 / Profile" title="Curious by nature. Precise by practice." /><div><p className="large-copy">{portfolio.summary}</p><div className="strength-grid">{portfolio.strengths.map((item, i) => <div className="strength" key={item}><span>0{i + 1}</span><b>{item}</b></div>)}</div></div></div></section> }

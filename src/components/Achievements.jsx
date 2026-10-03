@@ -1,0 +1,3 @@
+import SectionHeading from './SectionHeading'
+import { portfolio } from '../data/portfolio'
+export default function Achievements() { return <section className="section achievements"><div className="container"><SectionHeading eyebrow="06 / Beyond the brief" title="Always staying in motion." /><div className="achievement-grid"><div><p className="eyebrow">Certifications</p>{portfolio.certifications.map(([name, issuer, date]) => <div className="cert" key={name}><b>{name}</b><span>{issuer} · {date}</span></div>)}</div><div className="award-panel"><p className="eyebrow">Recognition</p><h3>{portfolio.award}</h3><p>{portfolio.volunteering}</p></div></div></div></section> }

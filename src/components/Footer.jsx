@@ -1,0 +1,3 @@
+import { Link, ArrowUp } from 'lucide-react'
+import { portfolio } from '../data/portfolio'
+export default function Footer() { return <footer><div className="container footer-inner"><span>© {new Date().getFullYear()} {portfolio.name}</span><span>Built with intention.</span><div><a href={`mailto:${portfolio.email}`} aria-label="Email"><Link size={17} /></a><a href="#top" aria-label="Back to top"><ArrowUp size={17} /></a></div></div></footer> }
