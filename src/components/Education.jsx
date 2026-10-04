@@ -1,3 +1,3 @@
 import SectionHeading from './SectionHeading'
 import { portfolio } from '../data/portfolio'
-export default function Education() { return <section className="section education" id="education"><div className="container split"><SectionHeading eyebrow="05 / Education" title="Grounded in fundamentals." /><div className="education-list">{portfolio.education.map(([degree, school, dates]) => <div className="education-item" key={degree}><div><h3>{degree}</h3><p>{school}</p></div><span>{dates}</span></div>)}</div></div></section> }
+export default function Education() { return <section className="section education" id="education"><div className="container split"><SectionHeading eyebrow="05 / Education" title="Education." /><div className="education-list">{portfolio.education.map(([degree, school, dates]) => <div className="education-item" key={degree}><div><h3>{degree}</h3><p>{school}</p></div><span>{dates}</span></div>)}</div></div></section> }
